@@ -1,0 +1,126 @@
+// notoSans font classes
+@mixin notoSans-thin {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-extralight {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-light {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-regular {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-medium {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-semibold {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-bold {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-extrabold {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-black {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 125%;
+}
+
+@mixin notoSans-thin-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-extralight-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-light-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-regular-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-medium-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-semibold-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-bold-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-extrabold-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 125%;
+}
+
+@mixin notoSans-black-italic {
+  font-family: "Noto Sans Georgian", serif;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 125%;
+}

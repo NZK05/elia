@@ -1,0 +1,7 @@
+<svg className='briefcase' width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.04284 22H16.0857C20.1272 22 20.8511 20.39 21.0622 18.43L21.8162 10.43C22.0877 7.99 21.3839 6 17.0911 6H7.03748C2.74461 6 2.04086 7.99 2.31231 10.43L3.06632 18.43C3.27745 20.39 4.00131 22 8.04284 22Z" stroke="#2658AB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.04285 6V5.2C8.04285 3.43 8.04285 2 11.26 2H12.8686C16.0857 2 16.0857 3.43 16.0857 5.2V6" stroke="#2658AB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.075 13V14C14.075 14.01 14.075 14.01 14.075 14.02C14.075 15.11 14.065 16 12.0643 16C10.0737 16 10.0536 15.12 10.0536 14.03V13C10.0536 12 10.0536 12 11.0589 12H13.0697C14.075 12 14.075 12 14.075 13Z" stroke="#2658AB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.7659 11C19.4436 12.68 16.7894 13.68 14.075 14.02" stroke="#2658AB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.63403 11.27C4.89609 12.81 7.44969 13.74 10.0536 14.03" stroke="#2658AB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

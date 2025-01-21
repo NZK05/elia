@@ -1,0 +1,1044 @@
+@media only screen and (max-width: 1024px) {
+  .App {
+    body {
+      section {
+        .home{
+          .calculatorAndCareerSection{
+            height: 735px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            .container{
+              position: relative;
+              width: 80%;
+              .circle{
+                position: absolute;
+                width: 367px;
+                height: 367px;
+                border-radius: 100%;
+                transition: all 0.5s ease;
+              }
+              .lighter{
+                background-color: $P300;
+                top: 47px;
+                left: 374px;
+              }
+              .darker{
+                background-color: $P500;
+                top: 221px;
+                right: 374px;
+              }
+              .box{
+                position: absolute;
+                height: 285px;
+                width: 508px;
+                background-color: $P300;
+                border-radius: 50px;
+                box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15);
+                .minibox{
+                  margin-left: 10px;
+                  margin-top: 10px;
+                  height: 265px;
+                  width: 488px;
+                  border-radius: 44px;
+                  background-color: $White;
+                  position: relative;
+    
+                  .text{
+                    width: 240px;
+                    @include notoSans-bold;
+                    font-size: 23px;
+                    color: $N200;
+                    line-height: 120%;
+                  }
+                  .button{
+                    width: 210px;
+                    height: 54px;
+                    border-radius: 27px;
+                    color: $White;
+                    font-size: 20px;
+                    @include notoSans-semibold;
+                    text-align: center;
+                    line-height: 50px;
+                  }
+                  .darker{
+                    background-color: $P500;
+                  }
+                  .lighter{
+                    background-color: $P300;
+                  }
+                  img{
+                    position: absolute;
+                  }
+                }
+              }
+              .calculator{
+                left: 0px;
+                top: 81px;
+                z-index: 1;
+                transition: all 0.2s ease;
+                .minibox{
+                  transition: all 0.5s ease;
+                  .text{
+                    padding-top: 40px;
+                    margin-left: 42px;
+                    margin-bottom: 40px;
+                  }
+                  .button{
+                    margin-left: 42px;
+                  }
+                  img{
+                    left: 250px;
+                    top: 15px;
+                  }
+                }
+              }
+              .career{
+                left: 411px;
+                top: 269px;
+                background-color: $P400;
+                transition: all 0.5s ease;
+                .minibox{
+                  .text{
+                    padding-top: 46px;
+                    margin-left: 266px;
+                    margin-bottom: 50px;
+                    width: 180px;
+                    text-align: end;
+                  }
+                  .button{
+                    margin-left: 240px;
+                  }
+                  img{
+                    left: 46px;
+                    top: 62px;
+                  }
+                }
+              }
+            }
+            .CalculatorOpened{
+              display: flex;
+              justify-content: center;
+              width: 90%;
+              
+              .circle{
+                transition: all 0.5s ease;
+              }
+              .lighter{
+                left: 0px;
+              }
+              .darker{
+                right: 0px;
+              }
+              .box{
+                background-image: linear-gradient(to right top, $P500, $P300);
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                .calculatorBox{
+                  display: flex;
+                  justify-content: center;
+                  position: absolute;
+                  border-radius: 42px;
+                  left: 10px;
+                  top: 10px;
+                  transition: all 0.2s ease;
+                  width: 90%;
+                  height: 400px;
+                  justify-self: center;
+                  
+                  .calculatorContainer{
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-self: center;
+                    h3{
+                      @include notoSans-bold;
+                      font-size: 15px;
+                      color: $N300;
+                      padding-top: 20px;
+                      margin-bottom: 0px;
+                    }
+                    .mainBox{
+                      width: 100%;
+                      .questions{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: -20px;
+                        margin-top: 30px;
+    
+                        .error{
+                          margin: 0 auto;
+                          font-size: 16px;
+                          padding-top: 18px;
+                          @include notoSans-semibold;
+                          color: $E300;
+                        }
+                        .singleQuestion{
+                          align-items: center;
+                          width: 100%;
+                          height: 32px;
+                          display: flex;
+                          justify-content: space-between;
+                          margin-bottom: 30px;
+                          label{
+                            font-size: 10px;
+                            @include notoSans-medium;
+                            color: $P500;
+                          }
+                          input, select{
+                            width: 100px;
+                            padding-left: 10px;
+                            height: 20px;
+                            border-radius: 8px;
+                            border: 2px solid $P300;
+                            &:focus{
+                              outline: 1px solid $P500;
+                            }
+                          }
+                          select{
+                            width: 115px;
+                            height: 32px;
+                            padding-left: 0px;
+                          }
+                          
+                          
+                        }
+                      }
+                      .contactInfo{
+    
+                      }
+                    }
+                    .result{
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      margin-top: 30px;
+                      margin-bottom: 30px;
+                      .resultPrice{
+                        padding-bottom: 60px;
+                        @include notoSans-bold;
+                        font-size: 15px;
+                        color: $N300;
+                        text-align: center;
+                        .price{
+                          color: $P300;
+                        }
+                      }
+                      div{
+                        p{
+                          @include notoSans-medium;
+                          color: $N300;
+                          font-size: 10px;
+                          margin-bottom: 4px;
+                        }
+                        .contact{
+                          margin: 0 auto;
+                          width: 230px;
+                          display: flex;
+                          justify-content: space-between;
+                          .singleContact{
+                            display: flex;
+                            display: flex;
+                            align-items: center;
+                            img{
+                              width: 24px;
+                              height: 24px;
+                              margin-right: 8px;
+                            }
+                            p{
+                              color: $P300;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .buttonsBox{
+                      width: 100%;
+                      display: flex;
+                      justify-content: space-between;
+                      margin-bottom: 100px;
+                      .button{
+                        width: 100px;
+                        background-color: $White;
+                        height: 37px;
+                        border-radius: 27px;
+                        display: flex;
+                        justify-content: center;
+                        box-shadow: inset 0 0 0 5px $P300;
+                        p{
+                          margin-top: 12px;
+                          font-size: 10px;
+                          @include notoSans-bold;
+                          color: $P500;
+                        }
+                      }
+                      .filled{
+                        background-color: $P300;
+                        p{
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .calculator{
+                left: 22px;
+                top: 81px;
+                height: 473px;
+                width: calc(100% - 44px);
+                transition: all 0.5s ease;
+              }
+              .career{
+                display: none;
+              }
+            }
+          }
+        }
+        .career {
+          .contact-section {
+            .left-side {
+              a {
+                img {
+                  width: 18px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .main-section {
+            display: flex;
+            align-items: center;
+            .left-side {
+              p {
+                font-size: 13px;
+              }
+              .title {
+                font-size: 30px;
+              }
+              .buttons {
+                a {
+                  font-size: 15px;
+
+                  img {
+                    width: 20px;
+                  }
+                }
+              }
+            }
+            .right-side {
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .second-section {
+            h1 {
+              font-size: 32px;
+            }
+            .jobs-container {
+              .cleaner,
+              .sales {
+                .title {
+                  font-size: 23px;
+                  width: 35%;
+                }
+
+                .info {
+                  img {
+                    width: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .career-detail {
+          .main-section {
+            .main-section-left-side {
+              width: 50%;
+              .buttons {
+                a {
+                  font-size: 15px;
+
+                  img {
+                    width: 20px;
+                  }
+                }
+              }
+
+              h1 {
+                font-size: 25px;
+              }
+              div {
+                font-size: 14px;
+              }
+            }
+
+            .main-section-right-side {
+              width: 50%;
+
+              form {
+                label {
+                  font-size: 15px;
+                }
+
+                input,
+                textarea {
+                  height: 34px;
+                }
+
+                input::placeholder {
+                  text-align: center;
+                }
+                div {
+                  position: relative;
+                  textarea {
+                    height: 105px;
+                    padding: 10px 50px 0px 10px;
+                  }
+                  .word-count {
+                    right: 33px;
+                    padding: 1px 4px;
+                    font-size: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+     
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .App {
+    .header-box {
+      .header {
+        height: 72px;
+        background-size: 200%;
+        background-position: top;
+        .logo {
+          margin-top: 6px;
+          img {
+            height: 68px;
+          }
+        }
+        .menu {
+          width: 90%;
+          a {
+            display: none;
+          }
+        }
+        .hamburger-menu-icon {
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+
+    body{
+      section{
+        // Home
+        width: 90%;
+        .home {
+          .mainSection {
+            margin-top: 60px;
+            padding-bottom: 0px;
+            flex-direction: column-reverse;
+              .left-side {
+                width: 100%;
+                .title {
+                  width: 100%;
+                  font-size: 24px;
+                  display: none;
+                  .primaryColor {
+                  }
+                }
+                .respo{
+                  display: block;
+                }
+                .text {
+                  margin-top: 16px;
+                  font-size: 14px;
+                }
+                .contact-section {
+                  a {
+                    img {
+                      width: 16px;
+                      height: 16px;
+                    }
+                    p {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+              .right-side {
+                margin-top: 0px;
+                img {
+                  display: none;
+                }
+                .respoImg{
+                  display: block;
+                  width: 250px;
+                }
+              }
+          }
+          .experienceSection {
+            height: 140px;
+              div {
+                p {
+                  font-size: 10px;
+                  text-align: center;
+                }
+                .title {
+                  font-size: 20px;
+                }
+              }
+          }
+          .serviceSection {
+            padding-top: 50px;
+            .left-side {
+              display: none;
+            }
+            .right-side {
+              width: 100%;
+                h4 {
+                  font-size: 20px;
+                  @include notoSans-bold;
+                }
+                .box {
+                  margin: 0 auto;
+                  width: calc(100% - 22px);
+                    .block {
+                      width: 100%;
+                        .main {
+                          width: calc(100% - 16px);
+                          h6 {
+                            font-size: 18px;
+                          }
+                          p {
+                            width: 90%;
+                            font-size: 12px;
+                          }
+                        }
+                        .icon {
+                          top: -12px;
+                          left: -20px;
+                          width: 54px;
+                          height: 54px;
+                          img {
+                            height: 40px;
+                            width: 40px;
+                          }
+                        }
+                    }
+                }
+            }
+          }
+          .howWeWorkSection {
+            padding: 0px;
+              .bigBox {
+                flex-direction: column;
+                height: inherit;
+                .groupInfo {
+                  height: inherit;
+                  flex-direction: column;
+                  margin: 0 auto;
+                  margin-top: 14px;
+                  width: calc(100% - 28px);
+                  border-radius: 24px;
+                  box-shadow: 0 0 0 6px $White;
+
+                  h4 {
+                    font-size: 14px;
+                    margin-top: 14px;
+                    margin-bottom: 6px;
+                  }
+                  div {
+                    flex-direction: column;
+                    img {
+                    }
+                    p {
+                    }
+                  }
+                }
+                .mainInfo {
+                  width: 100%;
+                  height: inherit;
+                  margin-top: 20px;
+                  div {
+                    margin-bottom: 24px;
+                    padding: 8px;
+                    img {
+                      width: 45px;
+                      margin-right: 8px;
+                    }
+                    p {
+                      font-size: 12px;
+                      text-align: center;
+                    }
+                  }
+                }
+                img {
+                  display: none;
+                }
+              }
+          }
+          .userCommentsSection {
+            height: inherit;
+            flex-direction: column;
+              .userComments {
+                width: 100%;
+                  h5 {
+                    font-size: 16px;
+                    margin-bottom: 6px;
+                  }
+                  p {
+                    font-size: 12px;
+                    margin-bottom: 12px;
+                  }
+                  div {
+                    .userCommentBox {
+                      height: 116px;
+                        div {
+                          flex-direction: column;
+                          div{
+                            height: 50px;
+                            margin: 0px;
+                            display: flex;
+                            flex-direction: row;
+                            .icon{
+                              width: 36px;
+                              margin-left: 4px;
+                              margin-right: 8px;
+                            }
+                            .stars{
+                              height: 22px;
+                              margin-top: 12px;
+                            }
+                          }
+                          p{
+                            margin: 0 auto;
+                            font-size: 11px;
+                            width: 94%;
+                            padding: 0px;
+                          }
+                        }
+                    }
+                  }
+              }
+              .ipadImg {
+                max-width: 60%;
+                margin: 0 auto;
+                padding: 40px 30px 20px 10px;
+              }
+          }
+          .calculatorAndCareerSection {
+            height: 320px;
+            width: 320px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+              .container {
+                .circle {
+                  width: 195px;
+                  height: 195px;
+                }
+                .lighter {
+                  left: 116px;
+                  top: 0px;
+                }
+                .darker {
+                  left: 0px;
+                  top: 116px;
+                }
+                .box {
+                  width: 288px;
+                  height: 150px;
+                  .minibox {
+                    width: calc(100% - 16px);
+                    height: 134px;
+                    margin-left: 8px;
+                    margin-top: 8px;
+                    .text {
+                      font-size: 11px;
+                    }
+                    .button {
+                      width: 120px;
+                    }
+                    img {
+                    }
+                  }
+                }
+                .calculator {
+                  left: 10px;
+                  top: 0px;
+                    .minibox {
+                        .text {
+                          padding-top: 26px;
+                          margin-left: 20px;
+                          margin-bottom: 16px;
+                          width: 120px;
+                        }
+                        .button {
+                          height: 30px;
+                          margin-left: 20px;
+                          font-size: 12px;
+                          line-height: 30px;
+                        }
+                        img {
+                          width: 100px;
+                          left: 150px;
+                          top: 4px;
+                        }
+                    }
+                }
+                .career {
+                  left: 10px;
+                  top: 168px;
+                    .minibox {
+                      .text {
+                        padding-top: 30px;
+                        margin-left: 160px;
+                        margin-bottom: 10px;
+                        width: 85px;
+                      }
+                      .button {
+                        width: 120px;
+                        margin-left: 128px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 12px;
+                      }
+                      img {
+                        height: 85px;
+                        left: 16px;
+                        top: 24px;
+                      }
+                    }
+                }
+              }
+              .CalculatorOpened {
+                  .circle {
+                  }
+                  .lighter {
+                  }
+                  .darker {
+                  }
+                  .box {
+                      .calculatorBox {
+                          .calculatorContainer {
+                              h3 {
+                              }
+                              .mainBox {
+                                  .questions {
+                                      .error {
+                                      }
+                                      .singleQuestion {
+                                          label {
+                                          }
+                                          input,
+                                          select {
+                                          }
+                                      }
+                                  }
+                                  .contactInfo {
+                                  }
+                              }
+                              .result {
+                                  .resultPrice {
+                                      .price {
+                                      }
+                                  }
+                                  div {
+                                      p {
+                                      }
+                                      .contact {
+                                          .singleContact {
+                                              img {
+                                              }
+                                              p {
+                                              }
+                                          }
+                                      }
+                                  }
+                              }
+                              .buttonsBox {
+                                  .button {
+                                      p {
+                                      }
+                                  }
+                                  .filled {
+                                      p {
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+                  .calculator {
+                  }
+                  .career {
+                  }
+              }
+          }
+        }
+  
+        // Career
+        .career {
+          .contact-section {
+            margin: 27px 0px 0px 0px;
+            .left-side {
+              display: flex;
+              a {
+                p {
+                  @include notoSans-semibold;
+                  font-size: 12px;
+                }
+              }
+            }
+            .right-side {
+              display: none;
+            }
+          }
+          .main-section {
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+            .left-side {
+              width: 100%;
+              p {
+                font-weight: bold;
+                font-size: 15px;
+              }
+              .title {
+                font-size: 25px;
+                color: $P500;
+                margin: 0px 0px 15px 0px;
+                display: none;
+              }
+              .title-mobile {
+                display: block;
+                font-size: 25px;
+                color: $P500;
+                margin: 20px 0px 25px 0px;
+                width: 100%;
+              }
+              .buttons {
+                display: flex;
+                margin-top: 30px;
+                a {
+                  padding: 10px 20px;
+                  font-size: 11px;
+                  img {
+                    width: 16px;
+                  }
+                }
+              }
+            }
+            .right-side {
+              img {
+                width: 90%;
+              }
+            }
+          }
+          .second-section {
+            margin-top: -170px;
+            margin-bottom: 48px;
+            h1 {
+              font-size: 24px;
+            }
+
+            .jobs-container {
+              .cleaner {
+                margin-top: 30px;
+              }
+
+              .cleaner,
+              .sales {
+                height: 40px;
+                .line {
+                  height: 30px;
+                  width: 1px;
+                }
+                .title {
+                  font-size: 10px;
+                  margin: 0px 10px 0px 12px;
+                }
+
+                .info1,
+                .info2 {
+                  font-size: 5px;
+                }
+
+                .info {
+                  margin: 0px 0px 10px 0px;
+                  display: flex;
+                  img {
+                    margin: 0px 5px 0px 0px;
+                    width: 7px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .career-detail {
+          .contact-section {
+            margin: 90px 0px 0px 0px;
+            .left-side {
+              a {
+                img {
+                  width: 18px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+            .right-side {
+              display: none;
+            }
+          }
+          .main-section {
+            flex-direction: column-reverse;
+            .main-section-left-side {
+              width: 90%;
+              .buttons {
+                margin: 52px 0px 0px 0px;
+                a {
+                  padding: 10px 20px;
+                  font-size: 11px;
+                  img {
+                    width: 16px;
+                  }
+                }
+              }
+
+              .description {
+                h1 {
+                  font-size: 15px;
+                  font-weight: bold;
+                }
+
+                div {
+                  font-size: 10px;
+                }
+              }
+            }
+
+            .main-section-right-side {
+              width: 100%;
+              position: relative;
+              margin: 0px 0px 0px 0px;
+
+              form {
+                label {
+                  font-size: 13px;
+                }
+
+                input,
+                textarea {
+                  margin: 10px 0px 10px 0px;
+                }
+
+                input::placeholder {
+                  text-align: center;
+                }
+                div {
+                  position: relative;
+                  .word-count {
+                    position: absolute;
+                    top: 10px;
+                    right: 45px;
+                    background-color: rgba($P200, 0.8);
+                    padding: 2px 5px;
+                    font-size: 10px;
+                    color: #555;
+                    border-radius: 3px;
+                    pointer-events: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      footer{
+        .grid{
+          width: 80%;
+          .main{
+            flex-direction: column;
+            .socialsRespoBox{
+              display: block;
+            }
+            .info{
+              margin-bottom: 60px;
+              p{
+
+              }
+              img{
+                display: none;
+              }
+            }
+            .contact{
+              h5{
+  
+              }
+              .contactlist{
+                margin-bottom: 60px;
+                div{
+                  
+                  img{
+                    
+                  }
+                  p{
+                    @include notoSans-regular;
+                  }
+                }
+              }
+              .socials{
+                display: none;
+                img{
+
+                }
+              }
+            }
+            .list{
+              margin-bottom: 60px;
+              h5{
+                
+              }
+              div{
+                
+                p{
+                  
+                }
+              }
+            }
+            .times{
+              
+            }
+            .nav{
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
